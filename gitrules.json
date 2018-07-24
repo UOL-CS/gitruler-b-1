@@ -1,0 +1,27 @@
+{
+  "setup-files": [
+    {"path":"files/products/banana.txt", "contents":"Yellow"},
+    {"path":"files/products/orange.txt", "contents":"Orange"},
+    {"path":"files/products/plum.txt", "contents":"\nSmall"}
+  ],
+  "rules":[
+    { "rule": "text", "separator":"-", "width":120, "heading":"CREATING AND COMMITTING A NEW FILE", "double-space":true},
+    { "rule": "head-exists", "stop-on-fail":true},    
+    { "rule": "file-tracked-in-head", "path": "files/customers.txt" },
+    { "rule": "file-contains-in-head", "path" : "files/customers.txt", "contents":"rancho burger", "ignore-case":true},
+    { "rule": "commit-with-message-updated-file", "path" : "files/customers.txt", "contents": "add el rancho", "ignore-case": true},
+    { "rule": "commit-with-message-doesnt-update-file", "contents": "add el rancho", "path":"files/products/orange.txt", "failure-message": "orange.txt was added in a commit that was only meant for customers."},
+    { "rule": "file-contains-in-head", "path" : "files/customers.txt", "contents":"zorba's palace", "ignore-case":true},
+    { "rule": "commit-with-message-updated-file", "path" : "files/customers.txt", "contents": "add zorba", "ignore-case": true},
+    { "rule": "commit-with-message-doesnt-update-file", "contents": "add zorba", "path":"files/products/orange.txt", "failure-message": "orange.txt was added in a commit that was only meant for customers."},
+
+    { "rule": "text", "separator":"-", "width":120, "heading":"COMMITING ONLY NEWLY CREATED FILES", "double-space":true},
+
+    { "rule": "commit-with-message-updated-file", "path" : "files/products/banana.txt", "contents": "add new products", "ignore-case": true},    
+    { "rule": "commit-with-message-updated-file", "path" : "files/products/orange.txt", "contents": "add new products", "ignore-case": true},    
+    { "rule": "commit-with-message-doesnt-update-file", "contents": "add new products", "path":"files/products/plum.txt", "failure-message": "the modified plum.txt was included in a commit which was intended for new files only"},
+
+    { "rule": "commit-with-message-updated-file", "path" : "files/products/plum.txt", "contents": "update products", "ignore-case": true},    
+    { "rule": "commit-with-message-doesnt-update-file", "contents": "update products", "path":"files/products/orange.txt", "failure-message": "orange.txt was added in a commit that was only meant for existing files."}
+  ]
+}

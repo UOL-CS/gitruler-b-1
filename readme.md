@@ -1,0 +1,45 @@
+<!--
+Marked Style: Github
+-->
+
+# GitRuler Section B
+
+This repository is section B of the [GitRuler exercises](https://github.com/UOL-CS/gitruler-exercises).
+
+In this exercise we will learn about tracking new files and creating commits with that contain selected changes.
+
+## Introduction
+
+If you do not already have a your own repository for these exercises [fork this repository](https://help.github.com/articles/fork-a-repo/). Clone this repository
+
+At any time you can run gitruler to check your progress. From the command line run:
+
+`java -jar <path to gitruler.jar>`
+
+For more information on running gitruler look at the [project repository](https://github.com/rcraggs/gitruler).
+
+## Instructions
+
+1. After cloning the repository change into the director on a [command line](https://www.techopedia.com/definition/3337/command-line-interface-cli).
+2. Run gitruler to initialise the exercise.
+
+## Creating and committing a new file
+
+1. Create a new file within in the `files` directory called `customers.txt` containing the text "El Rancho Burger".
+2. Stage and commit this new file with the commit message "Add El Rancho".
+3. Add another customer to this file called "Zorba's Palace" and commit that with the message "Add Zorba".
+
+## Using git status to find and commit only newly created files
+
+The `files/products` folder contains some files that describe products. Some of these are already tracked by git when you cloned the repository. Some files were added and others were edited when you ran gitruler.jar. These tasks are about committing the right changes in the right commits.
+
+1. Use the [git status](https://githowto.com/checking_status) command to identify which of the files from `files/products` are currently untracked and which are tracked but modified.
+2. Stage and commit the product files that are untracked with the commit message "Add new products".
+3. Stage and commit the product files that are tracked but modified with the commit message "Update products".
+
+
+
+
+
+
+
