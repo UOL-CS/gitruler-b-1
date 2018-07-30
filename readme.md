@@ -37,7 +37,11 @@ The `files/products` folder contains some files that describe products. Some of 
 2. Stage and commit the product files that are untracked with the commit message "Add new products".
 3. Stage and commit the product files that are tracked but modified with the commit message "Update products".
 
+## Submitting the results
 
+Once the exercise is complete, push this repository to the remote. If there are multiple branches for an exercise, make sure that you push them all. 
+
+To ensure that you have you correctly pushed everything that you need to, you could clone the remote repository into a separate folder and re-run gitruler.
 
 
 
