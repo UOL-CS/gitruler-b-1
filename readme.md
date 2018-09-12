@@ -4,27 +4,13 @@ Marked Style: Github
 
 # GitRuler Section B
 
-This repository is section B of the [GitRuler exercises](https://github.com/UOL-CS/gitruler-exercises).
+This repository is section B of the [GitRuler exercises](https://github.com/UOL-CS/gitruler-exercises). If you do not already have a your own repository for these exercises [fork this repository](https://help.github.com/articles/fork-a-repo/). Clone this repository.
 
 In this exercise we will learn about tracking new files and creating commits with that contain selected changes.
 
-## Introduction
-
-If you do not already have a your own repository for these exercises [fork this repository](https://help.github.com/articles/fork-a-repo/). Clone this repository
-
-At any time you can run gitruler to check your progress. From the command line run:
-
-`java -jar <path to gitruler.jar>`
-
-For more information on running gitruler look at the [project repository](https://github.com/rcraggs/gitruler).
-
-## Instructions
-
-1. After cloning the repository change into the directory on a [command line](https://www.techopedia.com/definition/3337/command-line-interface-cli).
-2. Run gitruler to initialise the exercise.
-
 ## Creating and committing a new file
 
+1. Run GitRuler to initialise the exercise.
 1. Create a new file within in the `files` directory called `customers.txt` containing the text "El Rancho Burger".
 2. Stage and commit this new file with the commit message "Add El Rancho".
 3. Add another customer to this file called "Zorba's Palace" and commit that with the message "Add Zorba".
@@ -42,8 +28,3 @@ The `files/products` folder contains some files that describe products. Some of 
 Once the exercise is complete, push this repository to the remote. If there are multiple branches for an exercise, make sure that you push them all. 
 
 To ensure that you have you correctly pushed everything that you need to, you could clone the remote repository into a separate folder and re-run gitruler.
-
-
-
-
-
