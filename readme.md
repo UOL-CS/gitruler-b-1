@@ -4,7 +4,7 @@ Marked Style: Github
 
 # GitRuler Section B
 
-This repository is section B of the [GitRuler exercises](https://github.com/UOL-CS/gitruler-exercises). If you do not already have a your own repository for these exercises [fork this repository](https://help.github.com/articles/fork-a-repo/). Clone this repository.
+This repository is section B of the [GitRuler exercises](https://github.com/UOL-CS/gitruler-exercises). If you do not already have a your own repository for these exercises [fork this repository](https://help.github.com/articles/fork-a-repo/). 
 
 In this exercise we will learn about tracking new files and creating commits with that contain selected changes.
 
